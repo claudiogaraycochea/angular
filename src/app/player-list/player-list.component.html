@@ -1,5 +1,4 @@
 <p>
   player-list works!
-  <player-data></player-data>
 </p>
-
+<player-data *ngFor="let player of playerList" [playerName]="player"></player-data>

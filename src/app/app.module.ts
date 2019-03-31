@@ -8,6 +8,9 @@ import { MainFooterComponent } from './main-footer/main-footer.component';
 import { PlayerComponent } from './player/player.component';
 import { PlayerListComponent } from './player-list/player-list.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { DataService } from './service/data.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,9 +21,10 @@ import { PlayerListComponent } from './player-list/player-list.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

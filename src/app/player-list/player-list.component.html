@@ -28,4 +28,15 @@
       </div>
       <player-data *ngFor="let playerItem of playerList" [playerItem]="playerItem" class="item"></player-data>
   </div>
+
+  <hr>
+  Posts
+  <div class="table-list">
+    <div *ngFor="let post of posts" class="item">
+      <div class="col-4 col">{{post.userId}}</div>
+      <div class="col-4 col">{{post.title}}</div>
+      <div class="col-2 col">Number</div>
+      <div class="col-2 col"></div>
+    </div>
+  </div>
 </div> 

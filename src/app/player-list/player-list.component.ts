@@ -23,6 +23,10 @@ export class PlayerListComponent implements OnInit {
   addPlayer(inpFirstName,inpLastName,inpNumber) {
     console.log('Add Player', inpFirstName.value, inpLastName.value, inpNumber.value);
     this.playerList.push(new Player(inpNumber.value, inpFirstName.value, inpLastName.value));
+    inpNumber.value= '';
+    inpFirstName.value= '';
+    inpLastName.value= '';
+    inpFirstName.focus();
     return false;
   }
 

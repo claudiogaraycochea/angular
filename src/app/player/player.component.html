@@ -1,3 +1,13 @@
-<div>
-  - {{playerName}}
+<div class="col-4 col">
+  {{playerItem.firstName}} 
+</div>
+<div class="col-4 col">
+  {{playerItem.lastName}}
+</div>
+<div class="col-2 col">
+  {{playerItem.id}}
+</div>
+<div class="col-2 col">
+  <button class="btn small" (click)="showPlayer(playerItem)">View</button>
+  <button class="btn small danger" (click)="deletePlayer(playerItem)">Delete</button>
 </div>

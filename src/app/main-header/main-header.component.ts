@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './main-header.component.html',
   styleUrls: ['./main-header.component.css']
 })
-export class mainHeaderComponent {
+export class MainHeaderComponent {
   title = 'Testing title';
 }

@@ -5,14 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainHeaderComponent } from './main-header/main-header.component';
 import { MainFooterComponent } from './main-footer/main-footer.component';
-import { TestDirectivesComponent } from './test-directives/test-directives.component';
+import { PlayerComponent } from './player/player.component';
+import { PlayerListComponent } from './player-list/player-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainHeaderComponent,
     MainFooterComponent,
-    TestDirectivesComponent
+    PlayerComponent,
+    PlayerListComponent
   ],
   imports: [
     BrowserModule,

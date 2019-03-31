@@ -6,7 +6,16 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./player.component.css']
 })
 export class PlayerComponent implements OnInit {
-  @Input() playerName;
+  @Input() playerItem;
+
+  showPlayer(playerItem) {
+    console.log('Show Player', playerItem);
+  }
+
+  deletePlayer(playerItem) {
+    console.log('Delete Player', playerItem);
+  }
+
   constructor() { }
 
   ngOnInit() {

@@ -1,4 +1,31 @@
-<p>
-  player-list works!
-</p>
-<player-data *ngFor="let player of playerList" [playerName]="player"></player-data>
+<div *ngIf="active">
+  <h3>Player List {{team}}</h3>
+  <div>
+    <form (submit)="addPlayer(inpFirstName,inpLastName,inpNumber)">
+      <div class="row"> 
+        <div class="col-2 col">Add Player</div>
+        <div class="col-3">
+          <input type="text" #inpFirstName class="inp" placeholder="First Name">
+        </div>
+        <div class="col-3">
+          <input type="text" #inpLastName class="inp" placeholder="Last Name">
+        </div>
+        <div class="col-3">
+          <input type="text" #inpNumber class="inp" placeholder="Number">
+        </div>
+        <div class="col-1">
+          <button class="btn primary">Add</button>   
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="table-list">
+      <div class="table-header">
+        <div class="col-4 col">First Name</div>
+        <div class="col-4 col">Last Name</div>
+        <div class="col-2 col">Number</div>
+        <div class="col-2 col"></div>
+      </div>
+      <player-data *ngFor="let playerItem of playerList" [playerItem]="playerItem" class="item"></player-data>
+  </div>
+</div> 

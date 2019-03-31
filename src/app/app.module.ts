@@ -3,14 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { mainHeaderComponent } from './main-header/main-header.component';
+import { MainHeaderComponent } from './main-header/main-header.component';
 import { MainFooterComponent } from './main-footer/main-footer.component';
+import { TestDirectivesComponent } from './test-directives/test-directives.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    mainHeaderComponent,
-    MainFooterComponent
+    MainHeaderComponent,
+    MainFooterComponent,
+    TestDirectivesComponent
   ],
   imports: [
     BrowserModule,

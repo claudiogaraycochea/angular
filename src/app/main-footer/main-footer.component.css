@@ -1,0 +1,7 @@
+.main-footer {
+  display: flex;
+}
+
+.main-footer .item {
+  margin-right: 20px;
+}
